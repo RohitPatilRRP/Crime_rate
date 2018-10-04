@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="node_modules/jvectormap/jquery-jvectormap.css" />
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -24,7 +24,7 @@
 .nav
 tr td {
 font-size:17px;
-padding: 3px; 
+padding: 3px;
 font-family: 'Roboto', sans-serif; ;
 }
 .nav input[type="text"],input[type="date"]{
@@ -54,7 +54,7 @@ font-family: 'Roboto', sans-serif; ;
 	font-size: 17px;
 	padding: 5px;
 }
-.nav input[type="submit"]:hover { 
+.nav input[type="submit"]:hover {
     background-color: #4fc04d;
    	color: white;
 }
@@ -128,7 +128,7 @@ font-family: 'Roboto', sans-serif; ;
                       			<option>2015</option>
                       		</select>
                       		</td>
-                      		
+
                       		<tr>
                       		<td>
                       		Select Category :
@@ -139,7 +139,7 @@ font-family: 'Roboto', sans-serif; ;
                       			<option>robbery</option>
                       		</select>
                       		</td>
-                      		
+
                       		<tr>
                       		<td>
                       		Select Date :
@@ -147,7 +147,7 @@ font-family: 'Roboto', sans-serif; ;
                       		<td>
                       		<input type="date">
                       		</td>
-                      		
+
                       		<tr>
                       		<td>
                       		Enter District :
@@ -174,7 +174,7 @@ font-family: 'Roboto', sans-serif; ;
                       		</td>
                       		</table>
                       	</form>
-                      </ul>                   
+                      </ul>
                   </div>
               </div>
             </div>
@@ -199,9 +199,9 @@ var mapProp= {
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBiToubfWH_iwhTEf3SRJnpQRDfERsBN8&callback=myMap"></script>
 
-   
+
                   </div>
                 </div>
               </div>
@@ -214,7 +214,7 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 							<div class="card">
 								<div class="card-body">
 									<h4 class="card-title mb-0">Loren Ipsum 1</h4>
-								
+
 								</div>
 							</div>
 						</div>
@@ -222,7 +222,7 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 							<div class="card">
 								<div class="card-body">
 									<h4 class="card-title mb-0">Loren Ipsum 2</h4>
-									
+
 								</div>
 							</div>
 						</div>
@@ -277,7 +277,7 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
   <!-- Custom js for this page-->
   <script src="js/dashboard.js"></script>
   <!-- End custom js for this page-->
-  
+
 
 </body>
 
